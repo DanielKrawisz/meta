@@ -8,7 +8,7 @@ namespace meta {
         // Specialize this type if you want to say that
         // we know how to serialize a given type in a given
         // format. 
-        template <typename type, typename format, typename string> struct read {
+        template <typename type, typename string, typename format> struct read {
             read() = delete;
             
             type operator()(string) const;
@@ -17,7 +17,7 @@ namespace meta {
         // Specialize this type if you want to say that
         // we know how to serialize a given type in a given
         // format. 
-        template <typename type, typename format, typename string> struct write {
+        template <typename type, typename string, typename format> struct write {
             write() = delete;
             
             string operator()(type) const;

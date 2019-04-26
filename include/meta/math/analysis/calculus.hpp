@@ -1,7 +1,13 @@
+// Copyright (c) 2019 Daniel Krawisz
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 #ifndef META_MATH_ANALYSIS_CALCULUS
 #define META_MATH_ANALYSIS_CALCULUS
 
 #include <stdint.h>
+
+#include <meta/math/transcendental/functions.hpp>
 
 namespace meta {
     namespace math {
